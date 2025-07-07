@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.signin-container {
+    max-width: 28rem;
+    max-height: 110vh;
+    margin:0 auto;
+    border: 1px solid #ccc;
+    padding:2rem 3rem 0 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.sign-in-wrap {
+    align-items: flex-end;
+}
+.logo-container {
+    justify-content: center;
+    display: grid;
+    place-items: center;
+}
+.logo-container img {
+    max-width: 100px;
+    mix-blend-mode: multiply;
+}
+.logo-container p {
+    font-weight: 500;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.input-container {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    border: 1px solid rgb(0, 166, 110);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: white;
+}
+
+label {
+    position: absolute;
+    top: 0.25rem;
+    left: 1rem;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: transform 0.3s, font-size 0.3s;
+    background-color: white;
+    padding:0 0.3rem;
+    color: rgb(0, 166, 110);
+
+
+
+    
+}
+
+input:focus {
+    border:1.5px solid  rgb(0, 166, 110) ;
+    outline: none;
+
+
+}
+
+input:focus + label {
+    background-color: white;
+    padding:0 0.3rem;
+    font-size: 14px;
+    color: rgb(0, 166, 110);
+
+}
+
+button {
+    width: 100%;
+    padding:1rem 3.5rem;
+    background-color: rgb(0, 166, 110);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top:0.5rem;
+}
+
+.sign-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    flex-flow: row wrap;
+    background-color: white;
+
+}
+.sign-buttons img {
+    position: relative;
+    width: 22px;
+    transform: translate(1rem , 2rem);
+}
+.sign-up-link {
+    text-align: center;
+    font-weight: 500;
+    margin: 1rem;
+}
+a {
+    text-decoration: none;
+    color:  rgb(0, 166, 110);
+}
+.or-sign {
+   
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+    
+}
+.or {
+    transform: translateY(-0.7rem);
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    padding:0 1rem;
+    background-color: white;
+    font-size: 0.8rem;
+
+
+}
+
+.buttons {
+    width: 100%;
+    background-color: transparent;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    color: black;
+    border-radius: 5px;
+    font-size:1rem;
+    cursor: pointer;
+    margin:-0.2rem 0;
+    text-align: justify;
+
+}
+.term-privacy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-flow:row wrap;
+    font-size: 0.9rem;
+    font-weight:400;
+    color:  rgb(0, 166, 110);
+}
+.term-privacy span {
+    margin:1rem;
+    color: black;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <div class="img-fluid">
+
+        </div>
+        <div class="sign-in-wrap">
+            <div class="logo-container">
+                <img src="sign Images/soflex logo.jpg" alt="">
+                <p>ShofLex</p>
+            </div>
+            <h1>Welcome back</h1>
+        <div class="input-container">
+            <input type="email" id="email" required>
+            <label for="email">Email address</label>
+        </div>
+        <button id="signInButton">Continue</button>
+
+        <span class="sign-up-link"><p>Don't have an account? <a href=""> Sign up</a></p></span>
+        <div class="or-sign"><hr><div class="or">or</div></div>
+        <div class="sign-buttons">
+            <img src="sign Images/microsoft.png" alt=""><button id="microsoftBtn" class="buttons">Continue with Microsoft</button>
+            <img src="sign Images/search.png" alt=""><button id="googleBtn" class="buttons">Continue with Google</button>
+            <img src="sign Images/apple-black-logo.png" alt=""><button id="appleBtn" class="buttons">Continue with Apple</button>
+        </div>
+        <div class="term-privacy">
+           <a href=""> Terms of use </a> <span>|</span>
+           <a href="">privacy policy </a>
+        </div>
+        </div>
+    </div>
+  
+</body>
+</html>
